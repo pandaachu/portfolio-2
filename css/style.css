@@ -43,21 +43,28 @@ a:link, a:visited, a:hover, a:active{
  * -------------------------------- */
 
 .header{
+  position: relative;
   width: 100%;
   height: 700px;
   padding: 28px 0 10px;
-  background: url(../image/header-bg.png) no-repeat;
+  background: url(../image/bg_clound.png) no-repeat,url(../image/header_bg.jpg) no-repeat;
+  background-size: 100%, 970px 601px;
+  background-position: 0 -200px, center 100px;
 }
 
-.header .title{
-  font-size: 5rem;
+/* .header .title{
+  position: absolute;
+  top:260px;
+  right: 440px;
+  font-size: 10rem;
+  color: #fff;
   font-family: 'Sofia', cursive;
-  letter-spacing: 4px;
-}
+  letter-spacing: 8px;
+} */
 
 .header .global-nav{
   text-align: center;
-  margin-top: 30px;
+  margin-top: 80px;
   background: url(../image/bg.png);
   box-shadow: 0 6px 4px -4px rgba(0,0,0,0.15);
 }
@@ -101,16 +108,17 @@ a:link, a:visited, a:hover, a:active{
  * -------------------------------- */
 
 .wrapper{
-  width: 970px;
+  width: 1010px;
   background-color: #fff;
-  margin: 30px auto 40px;
+  margin: 0 auto 40px;
+  padding: 20px;
 }
 
 /* --------------------------------
  * main
  * -------------------------------- */
 .main{
-  display: block; /*main元件中指定display: block,顯示block level區塊元件*/
+  display: block; 
   width: 660px;
   float: left;
 }
@@ -277,7 +285,7 @@ a:link, a:visited, a:hover, a:active{
  * -------------------------------- */
 
  .education-list {
-  margin: 10px 10px 30px;
+  margin: 10px 5px 30px;
  }
 
 .education-list  > li , ul > li{
@@ -322,9 +330,107 @@ a:link, a:visited, a:hover, a:active{
 }
 
 .education-item > ul > li{
-  padding-bottom: 10px
+  padding-bottom: 10px;
 }
 
+
+/* --------------------------------
+ * sidemenu-experience
+ * -------------------------------- */
+
+.experience-list{
+  margin: 10px 5px 30px;
+}
+
+.experience-list > li , ul > li{
+  list-style-type: none;
+}
+
+.experience-list .experience-item{
+  border-bottom: 1px dotted #52c0d7;
+  transition: opacity 0.15s;
+}
+
+.experience-item:hover{
+  opacity: 0.85;
+}
+
+.experience-list > li a{
+  display: block;
+  margin-left: 10px;
+  padding-left: 10px;
+  width: 250px;
+  line-height: 1.1;
+  background: url(../image/arrow.gif) no-repeat left;
+}
+
+
+.experience-list .experience-item .title{
+  display: block;
+  margin: 10px 0 0;
+  width: 80px;
+  background-color: #F6A800;
+  border-radius: 8px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.experience-list .experience-item li {
+  padding: 5px 10px;
+}
+
+.experience-list .experience-item .date{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.experience-item > ul {
+  padding-bottom: 5px;
+}
+
+/* --------------------------------
+ * sidemenu-skills & language
+ * -------------------------------- */
+
+ .skillsLan-list {
+  margin: 10px 5px 30px;
+ }
+
+.skillsLan-list  > li , ul > li{
+  list-style-type: none;
+}
+
+.skillsLan-item{
+  border-bottom: 1px dotted #52c0d7;
+  transition: opacity 0.15s;
+}
+
+.skillsLan-item:hover{
+  opacity: 0.85;
+}
+.skillsLan-list > li .title{
+  display: block;
+  margin: 10px 0;
+  width: 80px;
+  background-color: #F6A800;
+  border-radius: 8px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.skillsLan-list > li a{
+  display: block;
+  margin-left: 10px;
+  padding-left: 10px;
+  line-height: 1.5;
+  width: 250px;
+  background: url(../image/arrow.gif) no-repeat left;
+}
+
+.skillsLan-item > ul {
+  padding-bottom: 10px;
+}
+ 
 .gotop{
 	position: fixed;
 	right: 0;
